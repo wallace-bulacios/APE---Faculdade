@@ -1,0 +1,57 @@
+--------------------------------------------------------------------------------------------------------------
+                                    APE - Algoritmos e Programação Estruturada
+                               Exercícios sobre Introdução à Lógica de Programação
+                                       Professor Sandro Teixeira Carvalho
+                                          sandrotc.professor@gmail.com
+--------------------------------------------------------------------------------------------------------------
+
+ATENÇÃO: Você deve escrever cada um dos programas desta lista de exercícios práticos no seu IDE Code::Blocks
+         ou Dev-C++. Salve seus programas em uma pasta com o seu nome completo e, em seguida, compacte essa
+         pasta em formato zip ou rar e envie a pasta para o professor através do Teams.
+
+         Não envie arquivos com extensão .exe, ok? Envie somente os arquivos com extensão .c para o Teams.
+
+--------------------------------------------------------------------------------------------------------------
+
+Para as questões 02 e 03 abaixo você deve escrever um algoritmo na linguagem de pseudocódigo Portugol e deve
+escrever também um programa em linguagem C. O algoritmo escrito em Portugol pode ser feito de qualquer uma
+das seguintes maneiras abaixo, à sua escolha:
+
+   - Escreva o algoritmo usando a ferramenta conhecida como Visualg e envie seus arquivos com extensão .alg.
+   - Escreva o algoritmo em papel e tire uma foto de cada um deles (as palavras-chave devem ser sublinhadas).
+   - Escreva o algoritmo em um editor de textos gráfico como Word, LibreOffice etc. (as palavras-chave devem
+     ser sublinhadas).
+
+--------------------------------------------------------------------------------------------------------------
+
+01) Escreva um programa em linguagem C que leia o ano de nascimento de uma pessoa, calcule e imprima a idade
+    atual dessa pessoa. Utilize o programa em linguagem C anexo para aprender a capturar o ano a partir do
+    sistema operacional de seu computador.
+
+02) Escreva um algoritmo que, dada a idade de um nadador, classifique-o em uma das seguintes categorias:
+
+               ---------------------------------------
+                      Idade              Categoria
+               ---------------------------------------
+                 5 até 7 anos            Infantil A
+                 8 até 10 anos           Infantil B
+                 11 até 13 anos          Juvenil A
+                 14 até 17 anos          Juvenil B
+                 Maiores de 18 anos      Adulto
+               ---------------------------------------
+
+03) Escreva um algoritmo que calcule o que deve ser pago por um produto, considerando o preço normal de
+    etiqueta e a escolha da condição de pagamento. Utilize os códigos da tabela a seguir para ler qual a
+    condição de pagamento escolhida e efetuar o cálculo adequado.
+
+              -------------------------------------------------------------------------------------------
+                Código    Condição de Pagamento
+              -------------------------------------------------------------------------------------------
+                  1       À vista em dinheiro, recebe 10% de desconto
+                  2       À vista no cartão de crédito, recebe 5% de desconto
+                  3       Em duas vezes no cartão de crédito, preço normal de etiqueta sem juros
+                  4       Em três vezes no cartão de crédito, preço normal de etiqueta mais juros de 10%
+               -------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------
+Fim de arquivo.
