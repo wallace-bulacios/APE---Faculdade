@@ -1,0 +1,54 @@
+programa calculadora_idade
+
+1 - Verificar se o ano é bissexto
+	RETORNO -> 1- é bissexto / 2 - não e bissexto
+	Anos bissextos são multiplos de 4
+	e não multiplos de 100
+	e multiplos de 400.
+	
+		se(ano % 4 == 0 && ano % 100 !=0 ou ano % 400 == 0)
+			retorne 1 (bissexto = 1)
+		senao
+			retorne 0 (bissexto = 0)
+
+2 - verificar se a data digitada pelo usuário é valida
+	RETORNO -> 1 - valida 	0 - não é válida
+		
+		se (dia < 1 ou dia > 31 ou mes < 1 ou mes >12)
+			retorne 0
+		se (dia == 31 e (mes == 4 ou mes == 6 ou mes == 9 ou mes == 11 ))
+			retorne 0
+		se (mes == 2 e dia > 29)
+			retorne 0
+		se (mes == 2 e dia ==  29 e bissexto(ano não for bissexto) == 0)
+			retorne 0
+		retorne 1
+		
+		
+		
+
+/* Função que retorna a quantidade de dias de um mês
+ * Recebe mês e ano
+ * #mes com 31 dias -> 1, 3, 5, 7, 8, 10, 12
+ * #mes com 30 dias -> 4, 6, 9, 11
+ * #mes com 28 ou 29 dias -> 2
+ */
+	se (mes == 1 ou mes == 3 ou mes == 5 ou mes == 7 ou mes == 8 ou mes == 10 ou mes == 12)
+		retorne 31
+	senão{
+		se(mes == 4 ou mes == 6 ou mes == 9 ou mes == 11)
+			retorne 30
+		senão {
+			se (bissexto == 1)
+				retorne 29
+			senao
+				retorne 28
+			}
+		}
+	}
+	
+/* Função para calcular a idade em anos, meses e dias 
+ * Recebe como parâmetro a data de nascimento
+ * Data atual obtida é obtido do sistema.
+ */
+	

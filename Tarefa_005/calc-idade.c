@@ -64,6 +64,7 @@ int main(void)
     int idAnos;
     int idMeses;
     int meses;
+    int idadeDias;
 
     setlocale(LC_ALL, "Portuguese");
 
@@ -110,7 +111,7 @@ int main(void)
     switch (mesAtual) {
            case 1: strcpy(mesExtenso, "Janeiro"); break;
            case 2: strcpy(mesExtenso, "Fevereiro"); break;
-           case 3: strcpy(mesExtenso, "Marï¿½o"); break;
+           case 3: strcpy(mesExtenso, "Março"); break;
            case 4: strcpy(mesExtenso, "Abril"); break;
            case 5: strcpy(mesExtenso, "Maio"); break;
            case 6: strcpy(mesExtenso, "Junho"); break;
@@ -224,6 +225,7 @@ int main(void)
     if (mesAtual < mesNasc || (mesAtual == mesNasc && diaAtual < diaNasc))
     {
         idAnos--;
+
     }
 
     meses = mesAtual - mesNasc;/** Cálculo idade em meses */
@@ -233,7 +235,14 @@ int main(void)
         idMeses = 12 + meses;
     }
 
+    if (mesAtual > mesNasc || (mesAtual == mesNasc && diaAtual >= diaNasc)) {
+         idadeDias = idAnos * 365;
+    } else {
+         idadeDias = idAnos * 365 + (anoAtual - 1 - anoNasc) * 365 + (anoAtual - 1 - anoNasc) / 4 + diaAtual + (mesAtual - 1) * 31 - diaNasc - (mesNasc - 1) * 31;
+    }
+
     printf("Sua idade é: %d anos, %d meses", idAnos, idMeses);
+    printf("\ndias de vida: %d", idadeDias);
     printf("\n====================================================================================================================\n");
     return 0;
 }
